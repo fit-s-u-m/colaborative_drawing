@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Test Backend in go</title>
+  </head>
+  <body>
+    <script src="main.js" defer></script>
+    <script src="./p5/p5.min.js" defer></script>
+
+    <div class="flex flex-col gap-5 items-center">
+      <h1 class="text-cyan-600 text-3xl">
+        Learn back-end dev and web socketing
+      </h1>
+      <div id="canvas"></div>
+
+      <div class="flex gap-96">
+        <form onSubmit="send(event)" class="bg-blue-100">
+          <input
+            id="chat"
+            type="text"
+            placeholder="Type here"
+            class="input input-bordered input-accent w-full max-w-xs"
+          />
+        </form>
+        <div id="clear" class="btn btn-warning"></div>
+      </div>
+    </div>
+    <div class="flex flex-col" id="chat-box"></div>
+  </body>
+</html>
